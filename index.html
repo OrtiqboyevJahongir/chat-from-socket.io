@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <button type="button">
+                <img src="icons/burger-list.svg" style="width:40px" alt="">
+            </button>
+            <div class="title">
+                <img style="width: 50px;" src="icons/chat_icon.png" alt="">
+                <h1>chat</h1>
+            </div>
+           
+        </header>
+        <div class="container">
+            <div class="users-window">
+                <div class="users-head">
+                    <h3>people</h3>
+                    <h4 class="users-count">0</h4>
+                </div>
+                <div class="users-list">
+                    
+                </div>
+            </div>
+            <div class="chat-window">
+                <div class="chats">
+                   
+                </div>
+                <div class="user-input">
+                    <input id="user-msg" type="text" placeholder="type your messege">
+                    <button type="button" id="user-send" >SEND</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
+</body>
+</html>
